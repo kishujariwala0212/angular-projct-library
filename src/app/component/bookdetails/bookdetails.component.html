@@ -1,0 +1,40 @@
+<app-navbar></app-navbar>
+<!-- <section class="page1">
+  <div class="img">
+    <img src="{{ book[0].booktitle }}" alt="" />
+    <p>{{ books[0].bookname }}</p>
+  </div>
+</section> -->
+<section class="page2">
+  <div class="main">
+    <div class="left">
+      <img src="../../../assets/{{ book.image }}" alt="" />
+    </div>
+    <div class="right">
+      <div class="inner">
+        <p class="title">{{ book.title }}</p>
+        <h2 class="price">{{ book.price }}</h2>
+        <p class="desc">{{ book.description }}</p>
+       <h3 style="font-family:inherit; color: #1b1b1b;">Language: <span  class="des">{{ book.language }}</span> </h3>
+       <h3 style="font-family:inherit; color: #1b1b1b;">Author: <span class="des">{{ book.author }}</span></h3>
+
+        <!-- <p class="desc">{{ bookDetails[0].desc2 }}</p> -->
+        <form>
+          <div class="count">
+            <label>{{ counterNumber }}</label>
+            <div class="counter">
+              <span (click)="counter('+')">+</span>
+              <span class="minus" (click)="counter('-')">-</span>
+            </div>
+          </div>
+        <button (click)="addtocart(book.bookid)">Buy</button>
+        </form>
+        <div class="tags">
+        <p>Category: <a href="">{{ book.category }}</a> </p>
+        <p>Productid: <a href="">{{ book.bookid }}</a> </p>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>

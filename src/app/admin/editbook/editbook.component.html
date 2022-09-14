@@ -1,0 +1,75 @@
+<section class="page2">
+  <app-adminindex></app-adminindex>
+  <div class="header"><h1>EDIT YOUR BOOKS</h1></div>
+  <table>
+    <tr>
+      <th>No</th>
+      <th>Book id</th>
+      <th>Book Title</th>
+      <th>Author</th>
+      <th>Price</th>
+      <th>Language</th>
+      <th>Category</th>
+      <th style="text-align: center;">edit</th>
+    </tr>
+    <tr *ngFor="let book of books; index as i">
+      <td>{{ i + 1 }}</td>
+      <td>{{ book.bookid }}</td>
+
+      <td>{{ book.title}}</td>
+      <td>{{ book.author }}</td>
+      <td>{{ book.price }}</td>
+      <td>{{ book.language }}</td>
+      <td>{{ book.category  }}</td>
+      <!-- <td>
+        <button class="show" (click)="showMessage(data.message)">SHOW MESSAGE</button>
+        <div class="message" id="message">
+          <div class="top" ><p id="abc"></p></div>
+          <div class="bottom"><button (click)="close()">Close</button></div>
+        </div>
+      </td> -->
+      <td style="text-align: center;">
+
+        <a routerLink="/changebook" style="text-decoration: none;"><i style="color: white;" class="fa-solid fa-pen-to-square" (click)="show(book)"   ></i></a>
+        <!-- <div class="message" id="message">
+          <div class="top" >
+            <p id="book"></p>
+              <form [formGroup]="updatebook" (ngSubmit)="update(book._id)" id="updateboo" >
+                      <div class="mb-3">
+
+            <input type="text"  class="form-control" formControlName="bookid" placeholder="Book id" id="booki" >
+
+          </div>
+          <div class="mb-3">
+
+            <input type="text" class="form-control"  formControlName="title"  id="exampleInputPassword1" placeholder="Bookname">
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" formControlName="description"  placeholder="Description" id="floatingTextarea2" style="height: 100px"></textarea>
+          </div>
+          <div class="mb-3">
+            <input type="text" formControlName="author" class="form-control" placeholder="Author">
+          </div>
+          <div class="mb-3">
+            <input type="text" formControlName="category" class="form-control" placeholder="Category">
+          </div>
+          <div class="mb-3">
+            <input type="text"  formControlName="language" class="form-control" placeholder="Language">
+          </div>
+          <div class="mb-3">
+            <input type="text" formControlName="price" class="form-control" placeholder="Price">
+          </div>
+              </form>
+          </div>
+          <div class="bottom"><button (click)="close()">Close</button></div>
+        </div> -->
+        <i class="fa-solid fa-trash-can" id="del" (click)="delet(book.bookid)"></i>
+
+
+
+      </td>
+    </tr>
+  </table>
+
+</section>
+

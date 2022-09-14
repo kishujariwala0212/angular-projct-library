@@ -1,0 +1,100 @@
+<div class="page1">
+  <div class="uper">
+    <h2>Enter Address and more details to Order your place</h2>
+  </div>
+
+  <form [formGroup]="orderdata" (ngSubmit)="submitdata()">
+    <table>
+      <tr>
+        <td>
+          <input
+            type="text"
+            formControlName="name"
+            name="name"
+            placeholder="Entername"
+          />
+          <div *ngIf="name.invalid && (name.touched || name.dirty)">
+            <span class="error" *ngIf="name.errors?.required">*Enter Name</span>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input
+            type="text"
+            formControlName="pno"
+            name="pno"
+            placeholder="Phone no"
+          />
+          <div *ngIf="pno.invalid && (pno.touched || pno.dirty)">
+            <span class="error" *ngIf="pno.errors?.required">*No required</span>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input
+            name=""
+            id=""
+            cols="20"
+            rows="5"
+            formControlName="address"
+            placeholder="Address"
+          />
+          <div *ngIf="address.invalid && (address.touched || address.dirty)">
+            <span class="error" *ngIf="address.errors?.required">*Adress Required</span>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input
+            type="text"
+            formControlName="city"
+            name="city"
+            placeholder="city"
+          />
+          <div *ngIf="city.invalid && (city.touched || city.dirty)">
+            <span class="error" *ngIf="city.errors?.required">*Required</span>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input
+            type="text"
+            formControlName="state"
+            name="state"
+            placeholder="state"
+          />
+          <div *ngIf="state.invalid && (state.touched || state.dirty)">
+            <span class="error" *ngIf="state.errors?.required">*Required</span>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input
+            type="text"
+            formControlName="pincode"
+            name="pincode"
+            placeholder="pincode"
+          />
+          <div *ngIf="pincode.invalid && (pincode.touched || pincode.dirty)">
+            <span class="error" *ngIf="pincode.errors?.required">*Required</span>
+          </div>
+        </td>
+      </tr>
+      <p class="emailmsg"> <b>Note:</b> Your order details send user email Address</p>
+      <button class="buy" [disabled]="orderdata.invalid">Order to Buy</button>
+
+    </table>
+  </form>
+  <div class="note">
+    <h1>Order to Read  Your Favorite Book </h1>
+    <img src="../../../assets/Library.png" width="200" alt="">
+  </div>
+
+</div>

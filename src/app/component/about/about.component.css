@@ -1,0 +1,145 @@
+.page1{
+    width: 100%;
+    /* min-height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+
+}
+.services{
+
+    width: 90%;
+    min-height: 100vh;
+    background-image: url(../../../assets/about2.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.services h1{
+    color: white;
+    font-size: 4vw;
+    font-family: 'Playfair Display SC', serif;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.page2{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+
+}
+.about{
+    width: 90%;
+    min-height: 100vh;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+.left{
+    width: 50%;
+    min-height: 100vh;
+    /* border: 1px solid black; */
+    background-image: url(../../../assets/help.jpg);
+    background-position: center;
+    box-sizing: border-box;
+    background-size: cover;
+}
+.right{
+    width: 50%;
+    min-height: 100vh;
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    padding: 25px 40px 0px 30px;
+
+
+}
+.right h1{
+    font-size: 4vw;
+    font-family: 'Noto Serif', serif;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+
+}
+.right p{
+
+    /* font-size: 18px; */
+    margin: 20px 0;
+    padding: 0 30px 0 0;
+    font-size: 1.2vw;
+    letter-spacing: 1px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    line-height: 1.6em;
+    font-family: inherit;
+    font-weight: inherit;
+    color: #747373;
+    font-style: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+/* .btn{
+    border: 1px solid black;
+    width: 40%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+} */
+.btn button{
+    /* width: 20%; */
+    width: 50%;
+    height: 6vh;
+    border: none;
+    border-radius: 25px;
+    background-color: white;
+    border: 1px solid rgba(99, 98, 98, 0.37);
+    transition: 0.8s;
+    font-family: 'Noto Serif', serif;
+    font-size: 1.5vw;
+    box-shadow: 1px 1px 9px rgba(43, 43, 43, 0.274);
+}
+.btn button:hover{
+    background-color: #f3701d;
+    color: white;
+    border: #f3701d;
+    width: 51%;
+    height: 6.3vh;
+    /* padding: 12px 64px; */
+
+}
+@media screen and (max-width:800px) {
+  .about{
+    flex-direction: column;
+
+  }
+
+  .page2{
+    width: 100%;
+    border: 1px solid red;
+    min-height: 50vh;
+  }
+  .left, .right{
+    width: 100%;
+    min-height: 50vh;
+  }
+  .left{
+    background-image: url('../../../assets/about3.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+.services{
+ min-height: 40vh;
+}
+}

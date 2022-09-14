@@ -1,0 +1,353 @@
+.page1{
+  width: 100%;
+  /* height: 41em; */
+  min-height: 100vh;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page1 .bg
+{
+  width:90%;
+  /* border: 1px solid rgb(112, 0, 0); */
+  /* height: 41em; */
+  min-height: 100vh;
+  background-image:linear-gradient(to right, #0000007d, #00000073,#00000000,#100f0ffa),url('../../../assets/reading-making-notes2.jpg');
+  background-size: cover;
+  /* background-position: center; */
+position: relative;
+
+
+
+
+}
+.bg p{
+  position: absolute;
+  z-index: 10;
+  color: white;
+  left: 29%;
+  top: 39%;
+  transform: translateX(-50%);
+  font-size: 4.5rem;
+  font-weight: 600;
+  font-family: 'Roboto Slab', serif;
+}
+.page2{
+  width: 100%;
+  height: 140em;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+.page2 .inner{
+  width: 85%;
+  height:140em;
+  /* border: 1px solid black; */
+}
+.inner .Services{
+  height: 5.5em;
+  width: 85%;
+  margin-top: 4em;
+  /* border: 1px solid black; */
+}
+.Services h1
+{
+  font-size: 2rem;
+  font-weight: 200;
+  font-family: 'Roboto Slab', serif;
+}
+.Services hr{
+  margin-top: 10px;
+}
+.inner .facilites{
+  width: 100%;
+  height: 30em;
+  /* border: 1px solid rgb(255, 113, 113); */
+  display: flex;
+  box-sizing: border-box;
+  /* margin-bottom: 25px; */
+}
+.facilites .left
+{
+  width: 50%;
+  box-sizing: border-box;
+  height: 30em;
+  background-image: url('../../../assets/ReadingRooms.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+.facilites .right
+{
+  width: 50%;
+  height: 30em;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f0ee;
+}
+.right .inner_right{
+  width: 80%;
+  height: 24em;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+.inner_right .reading{
+  display: flex;
+}
+.reading div{
+  padding-left: 25px;
+  line-height: 22px;
+
+}
+.reading div p{
+  font-size: 1.3rem;
+  font-family:inherit;
+  font-weight: inherit;
+  font-style: normal;
+  color: #1b1b1b;
+  padding-top: 3px;
+  padding-bottom: 8px;
+}
+.reading div h4{
+  font-size: 1.2rem;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 100;
+}
+.pera{
+  width: 85%;
+    height: 10em;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.pera p
+{
+  line-height: 1.6em;
+  font-family: inherit;
+    font-weight: inherit;
+    padding-top: 10px;
+    font-style: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5e5e5e;
+}
+.inner .facilites2{
+  width: 100%;
+  height: 30em;
+  /* border: 1px solid rgb(255, 113, 113); */
+  display: flex;
+  box-sizing: border-box;
+  margin-top: 40px;
+}
+.facilites2 .left2
+{
+  width: 50%;
+  box-sizing: border-box;
+  height: 30em;
+  background-image: url('../../../assets/Groupstudy2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.facilites2 .right2
+{
+  width: 50%;
+  height: 30em;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f0ee;
+}
+.right2 .inner_right2{
+  width: 80%;
+  height: 24em;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+.inner_right2 .reading2{
+  display: flex;
+}
+.reading2 div{
+  padding-left: 25px;
+  line-height: 22px;
+
+}
+.reading2 div p{
+  font-size: 1.3rem;
+  font-family:inherit;
+  font-weight: inherit;
+  font-style: normal;
+  color: #1b1b1b;
+  padding-top: 3px;
+  padding-bottom: 8px;
+}
+.reading2 div h4{
+  font-size: 1.2rem;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 100;
+}
+.pera2{
+  width: 85%;
+    height: 10em;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.pera2 p
+{
+  line-height: 1.6em;
+  font-family: inherit;
+    font-weight: inherit;
+    padding-top: 10px;
+    font-style: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5e5e5e;
+}
+.inner .facilites3{
+  width: 100%;
+  height: 30em;
+  /* border: 1px solid rgb(255, 113, 113); */
+  display: flex;
+  box-sizing: border-box;
+  margin-top: 40px;
+}
+.facilites3 .left3
+{
+  width: 50%;
+  box-sizing: border-box;
+  height: 30em;
+  background-image: url('../../../assets/silentstudy2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.facilites3 .right3
+{
+  width: 50%;
+  height: 30em;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f0ee;
+}
+.right3 .inner_right3{
+  width: 80%;
+  height: 24em;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+.inner_right3 .reading3{
+  display: flex;
+}
+.reading3 div{
+  padding-left: 25px;
+  line-height: 22px;
+
+}
+.reading3 div p{
+  font-size: 1.3rem;
+  font-family:inherit;
+  font-weight: inherit;
+  font-style: normal;
+  color: #1b1b1b;
+  padding-top: 3px;
+  padding-bottom: 8px;
+}
+.reading3 div h4{
+  font-size: 1.2rem;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 100;
+}
+.pera3{
+  width: 85%;
+    height: 10em;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.pera3 p
+{
+  line-height: 1.6em;
+  font-family: inherit;
+    font-weight: inherit;
+    padding-top: 10px;
+    font-style: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5e5e5e;
+}
+.inner .facilites4{
+  width: 100%;
+  height: 30em;
+  /* border: 1px solid rgb(255, 113, 113); */
+  display: flex;
+  box-sizing: border-box;
+  margin-top: 40px;
+}
+.facilites4 .left4
+{
+  width: 50%;
+  box-sizing: border-box;
+  height: 30em;
+  background-image: url('../../../assets/evnet.png');
+  background-size: cover;
+  background-position: center;
+}
+.facilites4 .right4
+{
+  width: 50%;
+  height: 30em;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f0ee;
+}
+.right4 .inner_right4{
+  width: 80%;
+  height: 24em;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+.inner_right4 .reading4{
+  display: flex;
+}
+.reading4 div{
+  padding-left: 25px;
+  line-height: 22px;
+
+}
+.reading4 div p{
+  font-size: 1.3rem;
+  font-family:inherit;
+  font-weight: inherit;
+  font-style: normal;
+  color: #1b1b1b;
+  padding-top: 3px;
+  padding-bottom: 8px;
+}
+.reading4 div h4{
+  font-size: 1.2rem;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 100;
+}
+.pera4{
+  width: 85%;
+    height: 10em;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.pera4 p
+{
+  line-height: 1.6em;
+  font-family: inherit;
+    font-weight: inherit;
+    padding-top: 10px;
+    font-style: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5e5e5e;
+}

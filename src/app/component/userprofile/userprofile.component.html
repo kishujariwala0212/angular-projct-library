@@ -1,0 +1,50 @@
+  <section>
+  <app-sidenavbar></app-sidenavbar>
+  <div class="userprofile">
+    <div class="profile_image">
+      <img src="../../../assets/{{data.userimg}}" width="150" height="150"  alt="">
+    </div>
+    <div class="user_detail" data-aos="fade-right" data-aos-duration="40000">
+        <table>
+          <tr>
+            <th>First Name</th>
+            <td>{{data.firstname}}</td>
+            </tr>
+            <br>
+          <tr>
+            <th>Last Name</th>
+            <td>{{data.lastname}}</td>
+            </tr>
+            <br>
+          <tr>
+            <th>Username</th>
+            <td>{{data.username}}</td>
+            </tr>
+            <br>
+          <tr>
+            <th>Email</th>
+            <td>{{data.email}}</td>
+            </tr>
+            <br>
+          <tr>
+            <th>Phone no</th>
+            <td>{{data.phone}}</td>
+            </tr>
+
+
+        </table>
+
+        <div class="edit">
+          <a routerLink="/editprofile">Edit Profle</a>
+        </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+
+
+
+

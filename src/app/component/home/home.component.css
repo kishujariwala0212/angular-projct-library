@@ -1,0 +1,260 @@
+
+.page1{
+    width: 100%;
+   min-height: 190vh;
+    /* height: 76em; */
+    display: flex;
+    /* justify-content: center; */
+  /* border: 1px solid black; */
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+
+}
+@media screen and (max-width:887px) {
+  .page1{
+    min-height: 140vh;
+  }
+
+}
+@media screen and (max-width:412px) {
+  .page1{
+    min-height: 194vh;
+  }
+
+}
+.inner{
+    /* border: 1px solid black; */
+    width: 100%;
+    /* min-height: 40em; */
+    min-height: 100vh;
+    /* display: flex; */
+    box-sizing: border-box;
+
+}
+.inner .img{
+    /* border: 1px solid black; */
+    width: 90%;
+   height: 45em;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-image: url('../../../assets/librarian2.jpg');
+    background-size: cover;
+    background-position: center ;
+
+
+    margin: 0 auto;
+
+
+
+}
+@media  (max-width: 480px) {
+  .inner .img{
+    background-image: url('../../../assets/croplibrarian.jpg');
+    background-position: center;
+    height: 50vh;
+
+  }
+
+}
+@media  (min-width: 481px) and (max-width: 1024px) {
+  .inner .img{
+    background-image: url('../../../assets/croplibrarian2.jpg');
+
+  }
+
+}
+@media   (min-width: 1025px) {
+  .inner .img{
+    background-image: url('../../../assets/librarian2.jpg');
+
+  }
+
+}
+.inner .uper{
+    /* border: 1px solid green;  */
+    width: 90%;
+    min-height: 35vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+
+}
+@media screen and (max-width:500px){
+  .inner .uper{
+    flex-direction: row;
+    display: block;
+    /* margin: auto; */
+  }
+  .uper .pera{
+    width: 100%;
+    min-height: 10vh;
+
+  }
+
+}
+.img img{
+    width: 100%;
+    position: relative;
+}
+.pera{
+    /* border: 1px solid red; */
+    width: 34%;
+    /* height: 33.5vh; */
+    min-height: 35vh;
+    background-color: #f1f0ee;
+    box-sizing: border-box;
+    padding: 28px  22px;
+    box-sizing: border-box;
+
+
+
+}
+.pera h1{
+    margin-bottom: 10px;
+
+    font-size: 1.7;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+}
+.pera hr{
+
+    margin-bottom: 20px;
+}
+.pera p{
+    /* font-size: 15px; */
+
+
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+
+    box-sizing: border-box;
+    line-height: 1.6em;
+    font-family: inherit;
+    font-weight: inherit;
+    color: #747373;
+    font-style: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+.pera a{
+    text-decoration: none;
+    color: #f3711d;
+    text-transform:capitalize;
+    font-family: 'Noto Serif', serif;
+
+  font-size: 1.2rem;
+    /* font-size: 20px; */
+}
+.pera a:hover{
+    color: #c54f00;
+}
+.time{
+    width: 90%;
+    /* height: 30vh; */
+    /* min-height:25vh; */
+    padding: 25px 0;
+    background-image: linear-gradient(to right, #e95e3d, #a31f00); ;
+    display: flex;
+
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.time h1{
+    /* font-size:40px ; */
+    font-size: 4vw;
+    margin: 15px 0;
+    font-family:Arial, Helvetica, sans-serif;
+
+    text-shadow: 1px 10px 17px rgb(0, 0, 0);
+}
+.page2{
+  width: 100%;
+  height: 83vh;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.discover{
+  width: 90%;
+  height: 83vh;
+  /* border: 1px solid black; */
+  box-sizing: border-box;
+
+}
+.discshop h1{
+  font-family: 'Ubuntu', sans-serif;
+  padding: 10px 0 5px 20px;
+  font-size: 28px;
+  font-weight:bold;
+
+}
+.discshop hr{
+  margin-left: 20px;
+}
+
+.box{
+  width: 100%;
+  min-height:65vh;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-left: 16px;
+
+
+}
+.innbox {
+  width: 23%;
+  height:65vh;
+  /* border: 1px solid red; */
+  box-sizing: border-box;
+  margin-left: 7px;
+
+
+
+
+}
+
+
+.bookimage img{
+  width: 95%;
+
+
+}
+.innbox h1{
+  font-family: 'Playfair Display SC', serif;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 23px;
+  /* padding-top: 10px; */
+
+}
+.innbox p{
+  font-size: 15px;
+  color: rgb(122, 122, 122);
+  padding: 10px 30px 5px 0;
+  /* border: 1px solid black; */
+  /* height: 4vh; */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+
+}
+.innbox h2{
+  font-size: 30px;
+  color: #f3711d;
+  /* margin-top: 10px; */
+  position: relative;
+
+}
+

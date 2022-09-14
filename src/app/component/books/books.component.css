@@ -1,0 +1,279 @@
+.page1{
+    width: 100%;
+    height: 42em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+
+
+}
+.img{
+    width: 95%;
+    height: 40em;
+    background-image: linear-gradient(to right, #00000029, #100f0f4f),url(../../../assets/bookshop2.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img p{
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-weight: 900;
+    color: white;
+    font-family: 'Playfair Display SC', serif;
+}
+.page2{
+  width: 100%;
+  min-height:81em;
+  /* border: 1px solid black; */
+  position: relative;
+  padding-bottom: 30px;
+
+
+}
+.main{
+  width: 100%;
+  height: 16em;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+}
+.inner_main{
+  width: 87%;
+  height: 16em;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+/* .categury{
+  width: 33%;
+  height: 16em;
+  padding-left: 30px;
+
+}
+.categury p{
+
+  padding: 10px ;
+  font-weight: bold;
+  font-size: 30px;
+
+
+}
+.categury  hr{
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+.categury li{
+  margin-left: 10px;
+  margin-top:10px ;
+  color: #f3711d;
+  padding: 4px 0;
+
+
+}
+.categury li a{
+  text-decoration: none;
+  color: #1b1b1b;
+  font-family:'Times New Roman', Times, serif ;
+  font-size: 19px;
+  transition: 0.2s;
+}
+.categury li a:hover{
+  color: #f3711d;
+} */
+
+.serch{
+  width: 60%;
+  height: 16em;
+  /* border: 1px solid black;  */
+
+}
+.serch p{
+  /* font-family: 'Ubuntu', sans-serif; */
+  padding: 10px ;
+  font-weight: bold;
+  font-size: 30px;
+
+}
+.serch  hr{
+  margin-left: 10px;
+}
+.serch input{
+  margin-left: 15px;
+  margin-top: 20px;
+  padding: 13px 10px 13px 20px;
+  width: 65%;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  background: linear-gradient(to right,#e23826 0%,#f3701d 100%);
+  color: white;
+
+  font-size: 15px;
+  box-shadow: 1px 1px 8px rgb(92, 92, 92);
+}
+.serch input::placeholder{
+  color: white;
+  font-size: 1vw;
+  font-family: monospace;
+}
+.filter{
+  width: 30%;
+  height: 16em;
+  /* border: 1px solid black; */
+}
+.filter p{
+  padding: 10px ;
+  font-weight: bold;
+  font-size: 30px;
+
+}
+.filter  hr{
+  margin-left: 10px;
+}
+.filter select{
+  margin-left: 15px;
+  margin-top: 20px;
+  padding: 13px 10px 13px 20px;
+  width: 60%;
+  /* border-radius: 30px; */
+  border: none;
+  outline: none;
+  background: linear-gradient(to right,#e23826 0%,#f3701d 100%);
+  color: white;
+  height: 4em;
+  font-size: 15px;
+  box-shadow: 1px 1px 8px rgb(92, 92, 92);
+
+}
+.filter select option{
+  background:#e84c23;
+
+  /* color: white; */
+}
+.books_collect{
+  /* border: 1px solid black; */
+  min-height: 15em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.books_collect .inner{
+  /* border: 1px solid black; */
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.inner .box{
+  height: 100%;
+  width: 32%;
+  /* border: 1px solid red; */
+  justify-content: center;
+  display: flex;
+  padding-left: 5px;
+  flex-wrap: wrap;
+
+}
+.inner_box{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.box img{
+  width: 80%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.inner_box p{
+  font-size: 17px;
+  color: rgb(122, 122, 122);
+  padding: 15px 30px 5px 0;
+  margin-top: 10px;
+  /* border: 1px solid black; */
+  /* height: 4vh; */
+  /* white-space: nowrap; */
+  width: 80%;
+  height: 2em;
+ overflow: hidden;
+ text-overflow: ellipsis;
+
+
+
+}
+.inner_box h1{
+font-family: 'Playfair Display SC', serif;
+  letter-spacing: 1px;
+  font-weight: 600;
+    font-size: 25px;
+
+  padding-top: 10px;
+  transition: 0.2s;
+
+}
+.inner_box a:nth-child(2){
+  text-decoration: none;
+  color: black;
+}
+.inner_box h1:hover{
+  color: #f3711d;
+}
+.inner_box h2{
+
+  letter-spacing: 1px;
+  font-weight: 600;
+    font-size: 32px;
+  padding-top: 20px;
+  margin-top: 10px;
+  color: #f3711d;
+
+}
+.btn{
+  width: 100%;
+  min-height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid black; */
+  margin-top: 20px;
+}
+.btn button{
+  background: none;
+  width: 12%;
+  border: 1px solid rgb(229 229 229 / 66%);
+  height: 6vh;
+  border-radius: 25px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.btn hr{
+  width: 30%;
+  opacity: 0.3;
+
+}
+.btn hr:nth-child(1){
+  margin-right:30px ;
+}
+.btn .hr{
+  margin-left: 30px;
+}
+.btn button:hover{
+  background-color: #f3711d;
+  color: white;
+  border: #f3711d;
+  width: 13%;
+  height: 7vh;
+}

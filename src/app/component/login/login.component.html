@@ -1,0 +1,42 @@
+<section>
+
+    <div class="main" data-aos="fade-right" data-aos-duration="100000">
+        <div class="left">
+            <div class="welcome" >
+              <a style="text-decoration: none;" routerLink="" > <h1 >WELCOME <br>  TO LIBRARYSCIENTIA</h1></a>
+            </div>
+            <div class="pera">
+                <p>NICE TO SEE YOU AGAIN</p>
+            </div>
+            <div class="login">
+                <h1>Log in </h1><i class="fa-solid fa-arrow-right-to-bracket"></i>
+            </div>
+        </div>
+        <div class="right">
+            <div class="uslog">
+            <h1>User login</h1>
+        </div>
+        <form [formGroup]="regiserForm" (ngSubmit)="submiteData()">
+        <div class="inn">
+            <div class="user">
+
+             <input type="text" formControlName="username" placeholder="username">
+        </div>
+            <div class="pass">
+            <input type="password" formControlName="password" placeholder="password">
+        </div>
+        <div class="remeber">
+          <a routerLink="/forgetpass" >forgget password</a>
+        </div>
+        <div class="dontacc">
+          <span style="color: white;">Don't have account</span> <a routerLink="/signup"> Sign up</a>
+        </div>
+        </div>
+        <div class="btn">
+            <button>Login</button>
+        </div>
+    </form>
+
+        </div>
+    </div>
+</section>

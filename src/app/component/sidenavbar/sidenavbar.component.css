@@ -1,0 +1,85 @@
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+
+  box-shadow: 1px 1px 4px #26262663;
+  /* background: #070505f7; */
+  /* background-image: url('../../../assets/main2.jpg'); */
+  /* background-size: cover; */
+  /* background-position: center; */
+  overflow-x: hidden;
+  background-color: #101010;
+
+  transition: 0.5s;
+  padding-top: 60px;
+
+}
+
+.booklogo{
+  align-items: center;
+  text-align: center;
+}
+.logo{
+  width: 100%;
+    margin: auto;
+
+    font-size: 2.5vw;
+    color: white;
+    letter-spacing: 3px;
+    text-align: center;
+    font-family: monospace;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.page1 span .fa-solid{
+ margin: 10px 10px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+
+  display: block;
+  font-family: monospace;
+  transition: 0.3s;
+}
+.anker{
+
+  margin: 15px 0;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 20px;
+  transition: 0.8s;
+  box-shadow: 9px 5px 9px #000000;
+    /* background-color: #5c5c5c; */
+}
+.anker:hover{
+
+  margin: 20px 0;
+  background-color: #beb9b9ad;
+
+
+}
+
+.sidenav a:hover {
+  /* color: black; */
+  cursor: pointer;
+
+}
+.sidenav .closebtn {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#profile{
+   background-color: #beb9b9ad;
+}

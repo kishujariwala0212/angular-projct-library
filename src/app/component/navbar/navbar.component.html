@@ -1,0 +1,55 @@
+  <nav >
+      <div class="main " data-aos="fade-up" data-aos-duration="9000">
+          <div class="logo">
+              <img src="../../../assets/bookpng.png" alt="">
+                  <h1>LIBRARY SCIENTIA</h1>
+                  <!-- <img src="../../../assets/Library.png" alt=""> -->
+          </div>
+          <div class="in_nav">
+              <ul>
+                  <li><a routerLink="">HOME</a></li>
+                  <li><a routerLink="/book">BOOKS</a></li>
+                  <li><a routerLink="/spaces">SPACES & ROOMS</a></li>
+                  <li><a routerLink="/about">ABOUT</a></li>
+                  <li><a routerLink="/contact">CONTACT</a></li>
+                  <li ><a class="cart" routerLink="/cart" *ngIf="profile"> Cart<i class="fa-solid fa-cart-arrow-down"></i></a></li>
+                  <!-- <li ><a class="cart" routerLink="/cart" *ngIf="profile"> Cart<i class="fa-solid fa-cart-arrow-down"></i><small class="badge"></small>comment</a></li> -->
+
+              </ul>
+          </div>
+          <div class="user" id="mainprofile">
+              <a  class="login" id="log" *ngIf="loginbtn" routerLink="/login" (click)="show()" >LOGIN</a>
+              <a routerLink="/userprofile" id="user" *ngIf="profile" > <img src="../../../assets/{{user.userimg}}" alt="" ></a>
+              <a routerLink="/mainprofile" id="admin" *ngIf="admin" > <img src="../../../assets/pngwing.com.png" alt="" ></a>
+
+
+
+          </div>
+      </div>
+  </nav>
+  <!-- <section class="page1">
+    <div id="mySidenav" class="sidenav">
+      <div class="logo" style="width: 100%;">
+        <img src="../../../assets/Library2.png" style="margin-left: 20px;"  width="200" alt="">
+      </div>
+      <div class="div">
+      <a href="javascript:void(0)"  class="closebtn"(click)="closeNav()">&times;</a>
+
+    </div>
+      <a class="anker" routerLink="/mainprofile">PROFILE</a>
+      <a class="anker" routerLink="/addbook" >ADD BOOK</a>
+      <a class="anker" routerLink="/user">USERS</a>
+      <a class="anker" routerLink="/usersquery">USERS QUERY</a>
+      <a class="anker">ORDERS</a>
+      <a class="anker" routerLink="/editbook">Edit book</a>
+      <a  class="anker" routerLink="">EXIT</a>
+    </div>
+    <span class="open" style="font-size:30px;cursor:pointer ;  display: none; color: white;  " (click)="openNav()"><i class="fa-solid fa-bars"></i></span>
+
+
+
+
+
+    </section> -->
+
+

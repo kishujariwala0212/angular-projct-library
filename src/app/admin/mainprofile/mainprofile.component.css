@@ -1,0 +1,106 @@
+.page1{
+  width: 100%;
+  height: 100vh;
+  background-image: url('../../../assets/sep09.jpg');
+  background-size: cover;
+  background-position: center;
+
+  box-sizing: border-box;
+}
+.logo{
+  width: 100%;
+  text-align: center;
+}
+.admin{
+  position: absolute;
+  width:100%;
+
+  align-items: center;
+  text-align: center;
+   right: 0;
+   top: 30%;
+   box-sizing: border-box;
+
+
+ }
+ /* .admin p {
+   text-shadow: 4px 4px 4px #111111;
+   font-size: 5rem;
+   color: white;
+     letter-spacing: 3px;
+
+ } */
+ .admin span{
+  font-size:7vw;
+  font-weight: 800;
+  text-shadow: -0.08em 0.03em 0.12em rgb(0 0 0 / 90%);
+  color: white;
+  /* line-height: 8.2rem; */
+}
+.admin span:not(:first-child){
+  margin-left: 0.1em;
+}
+@media screen and (max-width:425px) {
+  .admin{
+    line-height: 3rem;
+    top: 20%;
+
+  }
+
+}
+
+/* .hero{
+  display: flex;
+}
+.hero .static-txt{
+  color: white;
+  font-size: 60px;
+  font-weight: 600;
+}
+.hero .daynamic-txt{
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.daynamic-txt li{
+  list-style: none;
+  color: #16f37d;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide
+{
+  100%{
+    top: -368px;
+  }
+}
+.daynamic-txt li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+  text-transform: uppercase;
+
+}
+.daynamic-txt li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  border-left: 2px solid #16f37d;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing
+{
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+} */

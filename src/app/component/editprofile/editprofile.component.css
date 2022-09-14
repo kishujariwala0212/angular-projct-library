@@ -1,0 +1,124 @@
+section{
+  background-color: #101010;
+  width: 100%;
+  min-height: 100vh;
+}
+table{
+  /* border: 1px solid white; */
+  width: 90%;
+  border-collapse: collapse;
+  margin: auto;
+  text-align: center;
+
+}
+form{
+  margin-top: 10px;
+}
+
+tr{
+  margin-bottom: 10px;
+}
+td input{
+  outline: none;
+  background: none;
+  border: none;
+ border-bottom: 1px solid #93939385;
+ /* border-radius: 5px; */
+  color: white;
+  font-size: 1.1vw;
+  padding: 11px 10px;
+  box-shadow: 1px 4px 7px black;
+  width: 30%;
+}
+td input::placeholder{
+  color: #ffffffa8;
+}
+table .changepass{
+    background: none;
+    color:#1281ffd7;
+    border: none;
+    margin-top: 10px;
+    font-size: 1vw;
+}
+table .changepass:hover{
+  border-bottom:1px solid #1281ffd7 ;
+}
+.newpass{
+  display: none;
+}
+.done{
+  background-color: #1281ffbd;
+  border: none;
+  color: white;
+  font-size: 1.1vw;
+  margin: 20px 0 5px 0;
+  border-radius: 5px;
+  padding: 5px 20px;
+}
+#changebtn
+{
+  background-color: #1281ffbd;
+  border: none;
+  color: white;
+  font-size: 1.1vw;
+
+  border-radius: 5px;
+  padding: 5px 20px;
+
+}
+#comfpass{
+  margin-bottom: 10px;
+}
+.error
+{
+  color: red;
+}
+.changeprofilepic{
+  /* border: 1px solid red; */
+  color:#1281ffd7;
+  height: 100%;
+  padding: 12px;
+  font-size: 1.5vw;
+
+}
+.cpp
+{
+  position: relative;
+  height: 100%;
+  /* border: 1px solid white; */
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ /* display: none; */
+ overflow: hidden;
+}
+.cpp .hid{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+ width: 30%;
+ /* border: 1px solid yellow; */
+ transform: translateX(-50%);
+ opacity: 0;
+
+}
+#picc
+{
+  display: none;
+}
+#picc2{
+  display: none;
+}
+#changebtn2
+{
+  display: none;
+  background-color: #1281ffbd;
+  border: none;
+  color: white;
+  font-size: 1.1vw;
+
+  border-radius: 5px;
+  padding: 5px 20px;
+}

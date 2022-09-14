@@ -1,0 +1,64 @@
+*{
+  background-color: #00000033;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 50px;
+
+  padding: 10px 10px 20px 10px;
+  margin-top: 15px;
+}
+
+.grid-container > div {
+
+  text-align: center;
+
+  box-shadow: 1px 1px 18px #00000033;
+border-radius: 15px;
+  height: 12em;
+  transition: 0.4s;
+}
+.grid-container div:hover{
+  box-shadow: 1px 1px 18px #0000007c;
+
+}
+
+.grid-container .item1{
+  background-image: url('../../../assets/bookname.jpg');
+  background-size: cover;
+
+
+
+}
+.grid-container .item2{
+  background-image: url('../../../assets/admin.png');
+  background-size: cover;
+  background-position: center;
+
+}
+.grid-container .item3{
+  background-image: url('../../../assets/Groupstudy.jpg');
+  background-size: cover;
+  background-position: center;
+
+}
+.grid-container .item4{
+  background-image: url('../../../assets/reading-making-notes.jpg');
+  background-size: cover;
+  background-position: center;
+
+}
+.grid-container .item5{
+  background-image: url('../../../assets/spaces3.jpeg');
+  background-size: cover;
+
+
+}
+.grid-container .item6{
+  background-image: url('../../../assets/evnet.png');
+  background-size: cover;
+  background-position: center;
+
+}
+

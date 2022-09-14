@@ -1,0 +1,53 @@
+.main{
+  width:100%;
+  min-height: 100vh;
+  background-color: #2c2f34;
+  background-image: linear-gradient(to bottom right, #070a17ab, #0c0f1b),url(../../../assets/ssss.png);
+  background-size: cover;
+  /* background-image: url('../../../assets/bookpng2.png'); */
+  background-position: center;
+  /* background-repeat: no-repeat; */
+  box-sizing: border-box;
+}
+form{
+
+  width: 50%;
+  /* float: right; */
+  margin: auto;
+  box-sizing: border-box;
+}
+form .form-control{
+  background-color: #ffffff0d;
+  border: none;
+  box-shadow: 3px 3px 7px #191919;
+  color: white;
+  width: 88%;
+  font-size: 0.89rem;
+  height: 4vh;
+  padding: 8px 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  outline: none;
+}
+form input::placeholder, textarea::placeholder{
+  color: #ffffffea;
+  font-size: 0.89rem;
+  font-family: Arial, Helvetica, sans-serif
+}
+.btn{
+  height: 5vh;
+  background-color: rgb(0, 101, 168);
+  border: none;
+  color: white;
+}
+@media screen and (max-width:425px) {
+ form {
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 95%;
+
+  }
+
+
+}
+

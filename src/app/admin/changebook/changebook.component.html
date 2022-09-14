@@ -1,0 +1,32 @@
+<div class="main">
+  <app-adminindex></app-adminindex>
+<form [formGroup]="updatebook" (ngSubmit)="update(books._id)" id="updateboo" >
+  <div class="mb-3">
+
+<input type="text"  class="form-control" formControlName="bookid" placeholder="Book id" id="booki" >
+
+</div>
+<div class="mb-3">
+
+<input type="text" class="form-control"  formControlName="title"  id="exampleInputPassword1" placeholder="Bookname">
+</div>
+<div class="mb-3">
+<textarea class="form-control" formControlName="description"  placeholder="Description" id="floatingTextarea2" style="height: 100px"></textarea>
+</div>
+<div class="mb-3">
+<input type="text" formControlName="author" class="form-control" placeholder="Author">
+</div>
+<div class="mb-3">
+<input type="text" formControlName="category" class="form-control" placeholder="Category">
+</div>
+<div class="mb-3">
+<input type="text"  formControlName="language" class="form-control" placeholder="Language">
+</div>
+<div class="mb-3">
+<input type="text" formControlName="price" class="form-control" placeholder="Price">
+</div>
+<div>
+  <button type="submit"  style="width: 20%;" class="btn btn-primary">Change</button>
+</div>
+</form>
+</div>

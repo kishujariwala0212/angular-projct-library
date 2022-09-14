@@ -1,0 +1,118 @@
+<section>
+  <app-sidenavbar></app-sidenavbar>
+  <form [formGroup]="editdata"  (ngSubmit)="submitdata()" data-aos="fade-left" data-aos-duration="40000"  >
+    <table>
+      <!-- <tr>
+        <td class="cpp">
+          <span class="changeprofilepic">Change profile photo</span>
+          <input class="hid" type="file" formControlName="image" name="image"   (change)="userimg($event)"  >
+
+
+        </td>
+
+
+      </tr>
+      <br> -->
+      <tr>
+        <td>
+          <input type="text"  formControlName="firstname"   name="firstname"   placeholder="firstname">
+          <div *ngIf="firstname.invalid && (firstname.touched || firstname.dirty) ">
+            <span class="error" *ngIf="firstname.errors?.required" >*First name is required</span>
+        </div>
+        </td>
+
+
+      </tr>
+      <br>
+      <tr>
+        <td><input type="text" formControlName="lastname"    name="lastname" placeholder="lastname">
+          <div *ngIf="lastname.invalid && (lastname.touched || lastname.dirty)">
+            <span class="error" *ngIf="lastname.errors?.required" >*Lastname is required</span>
+        </div>
+      </td>
+      </tr>
+      <br>
+      <tr>
+        <td><input type="text" formControlName="username"  name="username" placeholder="username">
+          <div *ngIf="username.invalid && (username.touched || username.dirty)">
+            <span class="error" *ngIf="username.errors?.required" >*username is required</span>
+        </div>
+        </td>
+      </tr>
+      <br>
+      <tr>
+        <td><input type="email" formControlName="email"   name="email"  placeholder="email">
+          <div *ngIf="email.invalid && (email.touched || email.dirty)">
+            <span class="error" *ngIf="email.errors?.required" >*eamil is required</span>
+        </div>
+        </td>
+      </tr>
+
+      <br>
+      <tr>
+        <td><input type="text"  formControlName="phone"  name="phone" placeholder="phone no">
+          <div *ngIf="phone.invalid && (phone.touched || phone.dirty)">
+            <span class="error" *ngIf="phone.errors?.required" >*no is required</span>
+        </div>
+        </td>
+      </tr>
+      <button class="done"  [disabled]="editdata.invalid" type="submit">Change</button>
+
+
+
+    </table>
+
+
+  </form>
+  <form [formGroup]="changephoto" (ngSubmit)="changepic()" data-aos="fade-left" data-aos-duration="40000" enctype="multipart/form-data" >
+    <table>
+      <button class="changepass" type="button" id="changepic" (click)="show2()">change your profile pic</button>
+
+      <tr>
+        <td class="cpp">
+          <span class="changeprofilepic"  id="picc2"> select photo</span>
+          <input class="hid" type="file" id="picc" formControlName="image" name="image"   (change)="userimg($event)"  >
+
+
+        </td>
+      </tr>
+      <button id="changebtn2"   type="submit" >Change</button>
+    </table>
+  </form>
+
+
+
+
+
+  <form [formGroup]="changepass" (ngSubmit)="passwrd()" data-aos="fade-left" data-aos-duration="40000">
+    <table>
+      <button class="changepass" type="button" id="changepass" (click)="show()">change your password</button>
+
+      <tr>
+        <td><input type="password" id="curpass" class="newpass" formControlName="curpass"  placeholder="current password">
+
+        </td>
+      </tr>
+      <tr>
+        <td><input type="password" id="newpass" class="newpass" formControlName="newpass" placeholder="new password">
+
+        </td>
+      </tr>
+      <tr>
+        <td><input type="password" id="comfpass" class="newpass" formControlName="comfpass" placeholder="comfirm password">
+
+        </td>
+      </tr>
+      <tr>
+        <td>
+
+          <p class="newpass" id="note">*if you don't know your current password</p>
+          <!-- <p>Logout your account and go to login page and click forrgetpassword</p> -->
+
+        </td>
+      </tr>
+      <br>
+      <button id="changebtn"  type="submit" class="newpass">Change password</button>
+    </table>
+  </form>
+</section>

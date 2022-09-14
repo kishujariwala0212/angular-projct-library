@@ -1,0 +1,39 @@
+<div class="userquery">
+  <app-adminindex></app-adminindex>
+  <div class="header"><h1>ORDERS</h1></div>
+
+  <table style="table-layout: fixed; ">
+    <tr>
+      <th>No</th>
+      <th>username</th>
+      <th>email</th>
+      <th style="text-align: center;">bookname</th>
+      <th style="text-align: center;">book qty</th>
+      <th>subtotal</th>
+    </tr>
+    <tr *ngFor="let data of data; index as i">
+      <td>{{ i + 1 }}</td>
+      <td>{{ data.userid.username }}</td>
+      <td style="word-wrap: break-word; font-size: 15px;" >{{ data.userid.email }}</td>
+      <!-- <td>
+
+        <button class="show" (click)="showMessage(data.message)">SHOW MESSAGE</button>
+        <div class="message" id="message">
+          <div class="top" ><p id="abc">
+
+
+          </p></div>
+          <div class="bottom"><button (click)="close()">Close</button></div>
+        </div>
+      </td>
+      <td style="text-align: center;">
+        <i class="fa-solid fa-trash-can" (click)="delet(data._id)"></i>
+
+      </td> -->
+      <td style="text-align: center; line-height: 2rem;"> <div *ngFor="let i of data.cartdata"> {{i.bookdata[0].title}} </div></td>
+      <td style="text-align: center; line-height: 2rem;"> <div *ngFor="let i of data.cartdata">{{i.quantity}}</div></td>
+    <td>$ {{data.Price}}</td>
+
+    </tr>
+  </table>
+</div>

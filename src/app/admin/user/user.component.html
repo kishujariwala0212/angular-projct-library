@@ -1,0 +1,24 @@
+<section class="users">
+  <app-adminindex></app-adminindex>
+  <div class="header"><h1>USERS DATA</h1></div>
+
+  <table>
+    <tr>
+      <th>No</th>
+      <th>Name</th>
+
+      <th>Email</th>
+      <th>Username</th>
+      <th>Password</th>
+    </tr>
+    <tr *ngFor="let data of data; index as i">
+      <td>{{ i + 1 }}</td>
+      <td>{{ data.firstname }} {{ data.lastname }}</td>
+
+      <td>{{ data.email }}</td>
+      <td>{{ data.username }}</td>
+      <td>{{ data.password }}</td>
+    </tr>
+  </table>
+
+</section>

@@ -1,0 +1,49 @@
+
+<!-- <form [formGroup]="addbook" (ngSubmit)="registerBook()" enctype="multipart/form-data">
+  bookid <input type="text" formControlName="bookid">
+  bookname <input type="text" formControlName="title"> <br> <br>
+  desc <textarea name="" id="" cols="30" rows="5" formControlName="description"></textarea> <br> <br>
+  author <input type="text" name="" formControlName="author">
+  Category <input type="text" formControlName="category"> <br> <br>
+  language <input type="text" formControlName="language">
+  price <input type="text" formControlName="price"> <br> <br>
+  bookimg <input type="file" (change)="bookImg($event)" formControlName="image"> <br> <br>
+
+  <input type="submit">
+</form> -->
+<section class="main">
+  <app-adminindex></app-adminindex>
+
+  <form [formGroup]="addbook" (ngSubmit)="registerBook()" enctype="multipart/form-data">
+    <div class="mb-3">
+
+      <input type="text"  class="form-control" formControlName="bookid" placeholder="Book id">
+
+    </div>
+    <div class="mb-3">
+
+      <input type="text" class="form-control" formControlName="title"  id="exampleInputPassword1" placeholder="Bookname">
+    </div>
+    <div class="mb-3">
+      <textarea class="form-control" formControlName="description"  placeholder="Description" id="floatingTextarea2" style="height: 100px"></textarea>
+    </div>
+    <div class="mb-3">
+      <input type="text" formControlName="author" class="form-control" placeholder="Author">
+    </div>
+    <div class="mb-3">
+      <input type="text" formControlName="category" class="form-control" placeholder="Category">
+    </div>
+    <div class="mb-3">
+      <input type="text"  formControlName="language" class="form-control" placeholder="Language">
+    </div>
+    <div class="mb-3">
+      <input type="text" formControlName="price" class="form-control" placeholder="Price">
+    </div>
+    <div class="mb-3">
+      <input class="form-control" (change)="bookImg($event)" formControlName="image" type="file" id="formFile">
+    </div>
+    <button type="submit"  style="width: 20%;" class="btn btn-primary">Add</button>
+  </form>
+
+</section>
+

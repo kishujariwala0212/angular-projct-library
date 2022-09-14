@@ -1,0 +1,65 @@
+  <section>
+      <div class="main" data-aos="fade-left" data-aos-duration="40000">
+      <div class="left">
+
+      </div>
+      <div class="right">
+          <div class="sigup">SING UP</div>
+          <div class="frm">
+          <form [formGroup]="formData" (ngSubmit)="submitData()">
+              <div class="fullname">
+                <div>
+                  <input type="text" formControlName="firstname" placeholder="FNAME" name="firstname">
+                  <div class="error">   </div>
+                </div>
+                <div>
+                  <input type="text" formControlName="lastname" placeholder="LNAME" name="lastname" >
+                  <div class="error" style="margin-left:60px ;">  </div>
+                </div>
+              </div>
+
+              <div class="username">
+                  <input type="email" formControlName="email" placeholder="ENTER YOUR EMAIL" name="email">
+                  <div class="error">  </div>
+              </div>
+
+              <div class="username">
+                  <input type="text" formControlName="phone" placeholder="PHONE NO:" name="phone">
+                  <div class="error">  </div>
+              </div>
+
+              <div class="username">
+                  <input type="text" formControlName="username" placeholder="USERNAME" name="username">
+                  <div class="error">  </div>
+              </div>
+
+              <div class="username eyes">
+                  <input type="password" formControlName="password" placeholder="PASSWORD" [type]=" showPassword ? 'text' : 'password' "  id="myInput" name="password" >
+                  <a  class="btn btn-primary" (click)='showHidePassword()' > <span *ngIf="showPassword; else elseblock"><i class="fa-solid fa-eye"></i></span></a>
+                  <ng-template #elseblock>
+                    <i class="fa-solid fa-eye-slash"></i>
+                  </ng-template>
+                  <div class="error">  </div>
+              </div>
+
+              <div class="username">
+                <input type="password" formControlName="c_password" placeholder="CONFIRM PASSWORD" [type]=" showPassword ? 'text' : 'password' "  id="myInput"  name="c_password">
+
+                <div class="error">  </div>
+            </div>
+
+
+              <div class="siup">
+                  <button type="submit">SING UP</button>
+              </div>
+
+          </form>
+
+      </div>
+      <div class="if">
+        <p>@copy right</p>
+        <p>If you have accout log in here <a routerLink="/login">log in</a> </p>
+    </div>
+      </div>
+  </div>
+  </section>

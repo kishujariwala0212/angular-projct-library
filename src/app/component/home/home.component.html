@@ -1,0 +1,61 @@
+<app-navbar></app-navbar>
+<section class="page1">
+    <div class="inner">
+        <div class="img" data-aos="fade-right" data-aos-duration="40000">
+            <!-- <img src="../../../assets/croplibrarian.jpg" alt=""> -->
+        </div>
+        <div class="uper" data-aos="fade-up" data-aos-duration="40000" >
+        <div  class="pera">
+            <h1 >Library Guides</h1>
+
+            <hr style="    width: 4%; height: -1px; background-color: #f3711d; position: absolute;  border:1px solid #f3711d; "> <hr style="  width: 70%;   ;">
+            <p >Find books, media, databases, e-journals and digital resources.</p>
+            <a  href="">Read  More</a>
+        </div>
+        <div class="pera">
+            <h1>Borrow, Reserve, Renew</h1>
+
+            <hr style="    width: 4%; height: -1px; background-color: #f3711d; position: absolute;  border:1px solid #f3711d; "> <hr style="  width: 90%;   ;">
+            <p >Get advanced research assistance in dozens of subject areas.</p>
+            <a  href="">Read  More</a>
+
+        </div>
+        <div class="pera">
+            <h1>Study Spaces & PCs</h1>
+
+            <hr style="    width: 4%; height: -1px; background-color: #f3711d; position: absolute;  border:1px solid #f3711d; "> <hr style="  width: 70%;   ;">
+            <p >Deposit data, papers, and other resources for long-term access.</p>
+            <a  href="">Read  More</a>
+
+        </div>
+    </div>
+    </div>
+    <div class="time" data-aos="fade-up" data-aos-duration="40000">
+        <h1 >The library is open today  6:00 AM – 8:00 PM</h1>
+    </div>
+</section>
+<app-treding></app-treding>
+
+<section class="page2">
+  <div class="discover">
+      <div class="discshop">
+        <h1>Discover our Shop</h1>
+        <hr style="    width: 10%; height: 2px; background-color: #f3711d; position: absolute;  border:1px solid #f3711d; "> <hr style="  width: 95%;   ;">
+      </div>
+      <div class="box">
+        <div class="innbox" *ngFor="let book of books,index as i">
+          <div class="uperbox" *ngIf=" i<=3" >
+            <div class="bookimage"><a [routerLink]="['/bookdetails',book.bookid]"> <img src="../../../assets/{{ book.image }}" alt=""></a></div>
+            <div class="bookname"> <h1> {{ book.title }} </h1></div>
+            <div class="bookdesc"><p>{{ book.description }}</p></div>
+            <div class="bookprice"><h2>{{ book.price }}</h2></div>
+
+          </div>
+        </div>
+
+      </div>
+  </div>
+  </section>
+  <app-footer></app-footer>
+
+

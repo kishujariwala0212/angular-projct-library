@@ -1,0 +1,131 @@
+<app-navbar></app-navbar>
+<section class="page1">
+  <div class="img">
+    <p>shop</p>
+  </div>
+</section>
+<section class="page2">
+  <div class="main">
+    <div class="inner_main">
+      <!-- <div class="categury">
+        <p>Categories</p>
+        <hr
+          style="
+            width: 4%;
+            height: 2px;
+            background-color: #f3711d;
+            position: absolute;
+            border: 1px solid #f3711d;
+          "
+        />
+        <hr style="width: 70% ;" />
+        <li><a (click)="filter('Biography')">Biography</a></li>
+        <li><a  (click)="filter('Psychology')">Psychology</a></li>
+        <li><a  (click)="filter('Romance')">Romance</a></li>
+        <li><a  (click)="filter('Science')">Science</a></li>
+        <li><a (click)="filter('Uncategorized')">Uncategorized</a></li>
+      </div> -->
+      <div class="serch">
+        <p>Search</p>
+        <hr
+          style="
+            width: 4%;
+            height: 2px;
+            background-color: #f3711d;
+            position: absolute;
+            border: 1px solid #f3711d;
+          "
+        />
+        <hr style="width: 70% ;" />
+          <input (input)="ser()" [(ngModel)]="name" type="text" placeholder="search books/Author/Category" />
+
+      </div>
+
+      <div class="filter">
+        <p>Filter by Price</p>
+        <hr
+          style="
+            width: 4%;
+            height: 2px;
+            background-color: #f3711d;
+            position: absolute;
+            border: 1px solid #f3711d;
+          "
+        />
+        <hr style="width: 70% ;" />
+        <select name="" id="">
+          <option class="option" value="">-- select price --</option>
+          <option value="" onclick="fun30()" >$30</option>
+          <option value="" >$30 - $40</option>
+          <option value="">$30 - $50</option>
+          <option value="">$30 - $60</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="books_collect">
+
+      <div class="inner"*ngIf="filterData;else elseBlock">
+        <div class="box" *ngFor="let book of filterData">
+          <div class="inner_box">
+            <a [routerLink]="['/bookdetails', book.bookid]">
+              <img src="../../../assets/{{ book.image }}" alt=""
+            /></a>
+            <a href="">
+              <h1>{{ book.title }}</h1>
+            </a>
+            <p>{{ book.description }}</p>
+            <h2>{{ book.price }}</h2>
+          </div>
+        </div>
+      </div>
+    <ng-template #elseBlock>
+      <div class="inner"  *ngIf="!filterData">
+        <div class="box" *ngFor="let book of books; index as i">
+          <div class="inner_box" *ngIf="i < show && display">
+            <a [routerLink]="['/bookdetails', book.bookid]">
+              <img src="../../../assets/{{ book.image }}" alt=""
+            /></a>
+            <a href="">
+              <h1>{{ book.title }}</h1>
+            </a>
+            <p>{{ book.description }}</p>
+            <h2>{{ book.price }}</h2>
+          </div>
+        </div>
+
+        <div class="box" *ngFor="let book of books; index as i">
+          <div class="inner_box" *ngIf="i < show && display2 && book.category == filterItem">
+            <a [routerLink]="['/bookdetails', book.bookid]">
+              <img  src="../../../assets/{{ book.image }}" alt=""
+            /></a>
+            <a href="">
+              <h1>{{ book.title }}</h1>
+            </a>
+            <p>{{ book.description }}</p>
+            <h2>{{ book.price }}</h2>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+    </div>
+  <div class="btn">
+    <hr />
+    <button (click)="showmore()">{{ title }}</button>
+    <hr class="hr" />
+  </div>
+</section>
+<app-footer></app-footer>
+
+
+<!-- <h6></h6>
+
+<div *ngFor="let book of books">
+  <div >
+    <h1>{{book.title}}</h1>
+
+
+  </div>
+
+</div> -->

@@ -1,0 +1,60 @@
+
+<app-sidenavbar></app-sidenavbar>
+<div class="page">
+  <div class="bookscart"> <h1>Your Books cart <i style="color: #f67b20;" class="fa-solid fa-cart-arrow-down"></i></h1> </div>
+<div class="main" *ngFor="let data of cartdata ">
+
+<div class="img">
+  <img src="../../../assets/{{data.bookdata[0].image}}" width="100%" alt="">
+</div>
+
+<div class="datas">
+  <h2 class="title">{{data.bookdata[0].title}}</h2>
+  <p>In stock</p>
+  <div class="language">
+    <div>
+    <h4>Language: </h4>
+    <h3> {{data.bookdata[0].language}}</h3>
+  </div>
+    <div class="auth">
+      <h4>Author: </h4>
+      <h3> {{data.bookdata[0].author}} </h3>
+    </div>
+  </div>
+  <!-- <div class="auth">
+    <h4>Author: </h4>
+    <h3> {{data.bookdata[0].author}} </h3>
+  </div> -->
+  <div class="qunty">
+    <div class="qty">
+      <button class="p"> <button (click)="removequantity(data._id,data.quantity)"> - </button> |  Qty:- {{data.quantity}} | <button (click)="addquantity(data._id,data.quantity)"> + </button> </button>
+
+    </div>
+    <!-- <div class="delte">
+      <button> Delete </button>
+    </div> -->
+    <div class="more">
+      <a routerLink="/book">see more like</a>
+    </div>
+  </div>
+
+</div>
+
+<div class="price">
+ <h2>{{data.bookdata[0].price}}</h2>
+</div>
+
+</div>
+<div class="subtotal">
+ <h1>Subtotal: $ {{subtotal}}</h1>
+</div>
+<div class="Proccedtobuy" *ngIf="subtotal != 0">
+    <p>Your Subtotal is $ {{subtotal}} </p>
+    <a routerLink="/order">Procced to buy</a>
+</div>
+<div class="Proccedtobuy" *ngIf="subtotal == 0">
+  <p>Your Cart is Empty!!</p>
+  <a routerLink="/book">Shop Now</a>
+</div>
+</div>
+

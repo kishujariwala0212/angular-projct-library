@@ -1,0 +1,108 @@
+.page1{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+
+
+}
+
+table{
+  /* border: 1px solid white; */
+  width: 90%;
+  border-collapse: collapse;
+  margin: auto;
+  text-align: center;
+
+}
+form{
+  margin-top: 10px;
+  /* border: 1px solid red; */
+  /* background-image: url(../../../assets/Library.png);
+  background-repeat: no-repeat;
+  background-size:90%;
+  background-position:center; */
+
+
+
+
+
+}
+
+tr{
+  margin-bottom: 10px;
+}
+td input{
+  box-shadow: 1px 7px 8px #909090a1;
+    outline: none;
+    background: none;
+    border: none;
+    border: 1px solid #bcbcbc47;
+    color: #000000;
+    border-radius: 10px;
+    font-size: 1vw;
+    padding: 11px 10px;
+    width: 30%;
+    margin-bottom: 10px;
+}
+.buy{
+  background: #ffd713;
+    width: 13%;
+    padding: 9px 0;
+    border: none;
+    border-radius: 7px;
+    font-size: 1.1vw;
+    font-family: serif;
+    color: #0f0f24;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 4px #00000085;
+    cursor: pointer;
+}
+.error{
+  color: red;
+}
+.note
+{
+  font-size: 1vw;
+  font-family: inherit;
+  color: inherit;
+  background-color: #00a8e15e;
+  padding: 10px 0;
+  width: 100%;
+
+
+
+  text-align: center;
+
+}
+.note h1{
+  font-size: 2vw;
+  font-family: inherit;
+  color: inherit;
+}
+
+.uper{
+
+  background-image: linear-gradient(170deg, #00a8e182, #b7ffe6b3);
+
+  width: 100%;
+  padding: 12px 0;
+
+  word-wrap: break-word;
+  text-align: center;
+
+}
+.uper h2{
+  font-size: 2vw;
+  font-family: inherit;
+  color: inherit;
+}
+.emailmsg
+{
+  margin-bottom: 10px;
+
+  color: rgb(65, 60, 60);
+}

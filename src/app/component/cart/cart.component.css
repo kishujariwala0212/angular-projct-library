@@ -1,0 +1,200 @@
+.page{
+  width: 100%;
+  /* background-color: #f3f3f3; */
+
+
+
+}
+.bookscart{
+  width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 0;
+    background-image: linear-gradient(170deg, #bbb5b500, #cdcdcdd9);
+    box-shadow: 1px 4px 8px #00000073;
+
+
+
+}
+.bookscart h1{
+  font-size: 2.5vw;
+  font-family: monospace;
+  margin: 10px;
+}
+.main
+{
+  /* border: 1px solid black; */
+  width: 95%;
+  /* padding: 20px 20px; */
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  box-shadow: 1px 3px 7px #00000038;
+  border-radius: 7px;
+
+background-color: white;
+
+
+
+
+
+}
+.img{
+  width: 15%;
+  /* border: 1px solid red; */
+  padding: 20px;
+}
+.datas{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width:75%;
+  /* border: 1px solid red; */
+}
+.datas p{
+  font-family: inherit;
+  color: green;
+  margin-bottom: 5px;
+  font-size: 1vw;
+}
+.datas .title{
+  font-size: 2.5vw;
+  margin-bottom: 10px;
+  font-family: monospace;
+  color: #353535;
+}
+
+.language{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.language div{
+  display: flex;
+}
+.language h4,h3{
+
+  /* font-family: inherit; */
+  font-size: inherit;
+  font-family: cursive;
+  font-size:1.1vw ;
+  color: #515151e3;
+}
+.auth{
+    display: flex;
+
+}
+.auth h4,h3{
+
+  color: #515151e3;
+  /* font-family: inherit; */
+  font-family: cursive;
+  font-size: inherit;
+  font-size:1.1vw ;
+
+}
+.price{
+  width: 7%;
+  /* border: 1px solid red; */
+  padding: 20px 10px;
+
+
+
+}
+.qunty{
+  display: flex;
+  width: 25%;
+  align-items: center;
+  /* border: 1px solid red; */
+  justify-content: space-between;
+
+
+}
+.qunty .delte button{
+  background: none;
+  border: none;
+  color: #3492a3;
+   padding: 0 5px;
+   cursor: pointer;
+}
+.qunty .qty .p{
+  padding: 4px 7px ;
+  color: #1b1b1b;
+  background-color: #E8E8E5;
+  border-radius: 8px;
+  border: 1px solid #9d9d9d3b;
+  box-shadow: 4px 3px 7px #9c9898f5;
+}
+
+.qty .p button{
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 3px 5px;
+  font-size: 1.1vw;
+}
+.qty .p button:nth-child(1):hover{
+  /* background-color: #dadad8; */
+  color: red;
+}
+.qty .p button:hover{
+  /* background-color: #dadad8; */
+  color: green;
+}
+
+.qunty .more a{
+  text-decoration: none;
+  color: #3492a3;
+
+}
+.subtotal{
+  /* border: 1px solid red; */
+  width: 90%;
+  margin: auto;
+  margin-top: 15px;
+  display: flex;
+ justify-content:end;
+margin-bottom: 20px;
+
+}
+.Proccedtobuy{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  margin: auto;
+  align-items: center;
+  margin-bottom: 20px;
+  /* border-radius: 10px; */
+  /* background-image: linear-gradient(170deg, #00a8e182, #b7ffe6b3); */
+  background-image: linear-gradient(354deg, #ffc05cab, #fdb210ed);
+
+}
+.Proccedtobuy p{
+  font-size: 1.5vw;
+  font-family: inherit;
+  letter-spacing: 1px;
+  /* font-weight: 600; */
+  margin: 10px;
+}
+.Proccedtobuy a{
+  padding: 5px 35px;
+  background-color: #ffd713;
+  font-size: 1.2vw;
+  font-family: system-ui;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: 0.1s;
+  border: 1px solid #727272a3;
+    box-shadow: 3px 4px 7px #00000066;
+}
+.Proccedtobuy a:hover{
+  box-shadow: 2px 3px 5px #00000091;
+  background-color: #fcd204;
+}

@@ -1,0 +1,24 @@
+
+<section class="page1" style="background: #d1cece4d;box-shadow: 1px 3px 6px #3b3b3b71;">
+  <div id="mySidenav" class="sidenav">
+    <div class="div">
+    <a href="javascript:void(0)"  class="closebtn"(click)="closeNav()">&times;</a>
+    <div class="booklogo">
+      <img src="../../../assets/bookpng.png" width="20%" alt="">
+    </div>
+    <div class="logo">
+
+      Library Scientia
+    </div>
+
+  </div>
+    <a class="anker" id="profile" routerLink="/userprofile" >profile</a>
+    <a class="anker" routerLink="/cart">Cart</a>
+    <a class="anker" routerLink="" (click)="logout()">Log out</a>
+    <a class="anker" routerLink="">exit</a>
+
+  </div>
+  <span style="font-size:30px;cursor:pointer;   color: #070606; " (click)="openNav()"><i class="fa-solid fa-bars"></i></span>
+
+  </section>
+
